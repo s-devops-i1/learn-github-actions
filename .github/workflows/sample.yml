@@ -1,0 +1,13 @@
+name: GitHub Actions Demo
+run-name:
+on: [push]
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo code Build
+      - run: echo code Test
+      - run: echo code Review
+
+
